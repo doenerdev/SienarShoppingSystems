@@ -1,7 +1,9 @@
 ﻿using MathNet.Numerics.LinearAlgebra;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Text;
 
 namespace SienarShoppingSystems
 {
@@ -41,6 +43,12 @@ namespace SienarShoppingSystems
                 }
             };
 
+            var test = "äbßa";
+            var res = RemoveDiacritics(test);
+
+            var repo = new ExpansionRepository();
+            var allExpansion = repo.GetAll();
+
             var constraints = GatherConstraints(wantedShips, wantedCards);
             var targetFunction = GatherTargetFunction();
             var tableau = new Tableau(constraints, targetFunction);
@@ -49,12 +57,29 @@ namespace SienarShoppingSystems
             Console.WriteLine("Hello World!");
         }
 
+        static string RemoveDiacritics(string text)
+        {
+            var normalizedString = text.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new StringBuilder();
+
+            foreach (var c in normalizedString)
+            {
+                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+        }
+
 
         public static IList<Constraint> GatherConstraints(List<Ship> requiredShips, List<Card> requiredCards)
         {
             //setup contraints 
             var constraints = new List<Constraint>();
-            var expansions = ExpansionRepository.GetAllExpansions();
+            var expansions = ExpansionRepositoryStub.GetAllExpansions();
             foreach (var requiredShip in requiredShips)
             {
                 var constraint = new Constraint()
@@ -94,7 +119,7 @@ namespace SienarShoppingSystems
 
         public static Constraint GatherTargetFunction()
         {
-            var expansions = ExpansionRepository.GetAllExpansions();
+            var expansions = ExpansionRepositoryStub.GetAllExpansions();
             var constraint = new Constraint();
             constraint.RightHandSide = 0;
             foreach(var expansion in expansions)
@@ -239,7 +264,7 @@ namespace SienarShoppingSystems
         public int RightHandSide { get; set; }
     }
 
-    public static class ExpansionRepository
+    public static class ExpansionRepositoryStub
     {
         public static List<XWingExpansion> GetAllExpansions()
         {

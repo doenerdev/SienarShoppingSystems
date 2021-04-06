@@ -1,0 +1,167 @@
+﻿{
+    "name": "Loose Ships",
+    "contents": [
+      {
+        "name": "Auzituck Gunship",
+        "type": "ship",
+        "size": "small",
+        "count": 2,
+      },
+      {
+        "name": "E-Wing",
+        "type": "ship",
+        "size": "small",
+        "count": 2
+      },
+      {
+        "name": "HWK-290",
+        "type": "ship",
+        "size": "small",
+        "count": 2
+      },
+      {
+        "name": "K-Wing",
+        "type": "ship",
+        "size": "small",
+        "count": 2
+      },
+      {
+        "name": "Attack Shuttle",
+        "type": "ship",
+        "size": "small",
+        "count": 2
+      },
+      {
+        "name": "YT-2400",
+        "type": "ship",
+        "size": "small",
+        "count": 2
+      },
+      {
+        "name": "Alpha-Class Star Wing",
+        "type": "ship",
+        "size": "small",
+        "count": 3
+      },
+      {
+        "name": "Lambda-Class Shuttle",
+        "type": "ship",
+        "size": "small",
+        "count": 2
+      },
+      {
+        "name": "TIE Aggressor",
+        "type": "ship",
+        "size": "small",
+        "count": 3
+      },
+      {
+        "name": "TIE Bomber",
+        "type": "ship",
+        "size": "small",
+        "count": 3
+      },
+      {
+        "name": "TIE Phantom",
+        "type": "ship",
+        "size": "small",
+        "count": 2
+      },
+      {
+        "name": "TIE Punisher",
+        "type": "ship",
+        "size": "mid",
+        "count": 2
+      },
+      {
+        "name": "Kihraxz Fighter",
+        "type": "ship",
+        "size": "small",
+        "count": 3
+      },
+      {
+        "name": "Aggressor",
+        "type": "ship",
+        "size": "mid",
+        "count": 2
+      },
+      {
+        "name": "HWK-290",
+        "type": "ship",
+        "size": "small",
+        "count": 2
+      },
+      {
+        "name": "M12-L Kimogila Fighter",
+        "type": "ship",
+        "size": "mid",
+        "count": 2
+      },
+      {
+        "name": "G-1A Starfighter",
+        "type": "ship",
+        "size": "mid",
+        "count": 2
+      },
+      {
+        "name": "Quadjumper",
+        "type": "ship",
+        "size": "small",
+        "count": 3
+      },
+      {
+        "name": "Scurrg H-6 Bomber",
+        "type": "ship",
+        "size": "mid",
+        "count": 2
+      },
+      {
+        "name": "Lancer-Class Pursuit Craft",
+        "type": "ship",
+        "size": "large",
+        "count": 2
+      },
+      {
+        "name": "StarViper",
+        "type": "ship",
+        "size": "small",
+        "count": 2
+      },
+      {
+        "name": "MG-100 StarFortress",
+        "type": "ship",
+        "size": "large",
+        "count": 3
+      },
+      {
+        "name": "Upsilon-Class Command Shuttle",
+        "type": "ship",
+        "size": "large",
+        "count": 3
+      },
+      {
+        "name": "Scavenged YT-1300",
+        "type": "ship",
+        "size": "large",
+        "count": 3
+      },
+      {
+        "name": "Raider-class Corvette",
+        "type": "ship",
+        "size": "huge",
+        "count": 3
+      },
+      {
+        "name": "GR-75 Medium Transport",
+        "type": "ship",
+        "size": "huge",
+        "count": 3
+      },
+      {
+        "name": "Gozanti-class Cruiser",
+        "type": "ship",
+        "size": "huge",
+        "count": 3
+      },
+    ]
+  }
